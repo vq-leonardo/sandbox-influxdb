@@ -1,0 +1,4 @@
+[
+  {"name": "current.status", "url": "https://api.openweathermap.org/data/2.5/weather"},
+  {"name": "current.rain", "url": "https://api.openweathermap.org/data/2.5/weather"}
+]

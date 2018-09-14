@@ -1,0 +1,245 @@
+[
+  {
+    "id": 1880252,
+    "name": "Singapore",
+    "country": "SG",
+    "coord": {
+      "lon": 103.850067,
+      "lat": 1.28967
+    }
+  },
+  {
+    "id": 1642911,
+    "name": "Jakarta",
+    "country": "ID",
+    "coord": {
+      "lon": 106.845131,
+      "lat": -6.21462
+    }
+  },
+  {
+    "id": 1580578,
+    "name": "Hochiminh",
+    "country": "VN",
+    "coord": {
+      "lon": 106.666672,
+      "lat": 10.83333
+    }
+  },
+  {
+    "id": 1694008,
+    "name": "Philippines",
+    "country": "PH",
+    "coord": {
+      "lon": 122,
+      "lat": 13
+    }
+  },
+  {
+    "id": 1650357,
+    "name": "Bandung",
+    "country": "ID",
+    "coord": {
+      "lon": 107.618607,
+      "lat": -6.90389
+    }
+  },
+  {
+    "id": 8018250,
+    "name": "Surabaya",
+    "country": "ID",
+    "coord": {
+      "lon": 108.020897,
+      "lat": -7.0259
+    }
+  },
+  {
+    "id": 1214520,
+    "name": "Medan",
+    "country": "ID",
+    "coord": {
+      "lon": 98.666672,
+      "lat": 3.58333
+    }
+  },
+  {
+    "id": 1622786,
+    "name": "Makassar",
+    "country": "ID",
+    "coord": {
+      "lon": 119.422096,
+      "lat": -5.14
+    }
+  },
+  {
+    "id": 1627896,
+    "name": "Semarang",
+    "country": "ID",
+    "coord": {
+      "lon": 110.420303,
+      "lat": -6.9932
+    }
+  },
+  {
+    "id": 1624917,
+    "name": "Bandarlampung",
+    "country": "ID",
+    "coord": {
+      "lon": 105.258034,
+      "lat": -5.42544
+    }
+  },
+  {
+    "id": 1621177,
+    "name": "Yogyakarta",
+    "country": "ID",
+    "coord": {
+      "lon": 110.360832,
+      "lat": -7.78278
+    }
+  },
+  {
+    "id": 1581130,
+    "name": "Ha Noi",
+    "country": "VN",
+    "coord": {
+      "lon": 105.841171,
+      "lat": 21.0245
+    }
+  },
+  {
+    "id": 1905468,
+    "name": "Da Nang",
+    "country": "VN",
+    "coord": {
+      "lon": 108.083328,
+      "lat": 16.08333
+    }
+  },
+  {
+    "id": 1609350,
+    "name": "Bangkok",
+    "country": "TH",
+    "coord": {
+      "lon": 100.51667,
+      "lat": 13.75
+    }
+  },
+  {
+    "id": 1153670,
+    "name": "Chiang Mai Province",
+    "country": "TH",
+    "coord": {
+      "lon": 99,
+      "lat": 18.75
+    }
+  },
+  {
+    "id": 1701668,
+    "name": "Manila",
+    "country": "PH",
+    "coord": {
+      "lon": 120.982201,
+      "lat": 14.6042
+    }
+  },
+  {
+    "id": 7521309,
+    "name": "Davao",
+    "country": "PH",
+    "coord": {
+      "lon": 125.708481,
+      "lat": 6.81304
+    }
+  },
+  {
+    "id": 6569685,
+    "name": "Chartered City of Cagayan de Oro",
+    "country": "PH",
+    "coord": {
+      "lon": 124.688889,
+      "lat": 8.46917
+    }
+  },
+  {
+    "id": 1717511,
+    "name": "Province of Cebu",
+    "country": "PH",
+    "coord": {
+      "lon": 123.666672,
+      "lat": 9.33333
+    }
+  },
+  {
+    "id": 1298822,
+    "name": "Yangon Division",
+    "country": "MM",
+    "coord": {
+      "lon": 96.166672,
+      "lat": 17
+    }
+  },
+  {
+    "id": 1311874,
+    "name": "Mandalay",
+    "country": "MM",
+    "coord": {
+      "lon": 96.083588,
+      "lat": 21.97473
+    }
+  },
+  {
+    "id": 1735161,
+    "name": "Kuala Lumpur",
+    "country": "MY",
+    "coord": {
+      "lon": 101.686531,
+      "lat": 3.1412
+    }
+  },
+  {
+    "id": 1733432,
+    "name": "Kota Kinabalu",
+    "country": "MY",
+    "coord": {
+      "lon": 116.072403,
+      "lat": 5.9749
+    }
+  },
+  {
+    "id": 1734634,
+    "name": "Ipoh",
+    "country": "MY",
+    "coord": {
+      "lon": 101.082901,
+      "lat": 4.5841
+    }
+  },
+  {
+    "id": 1734705,
+    "name": "Kuala Terengganu",
+    "country": "MY",
+    "coord": {
+      "lon": 103.1408,
+      "lat": 5.3302
+    }
+  },
+  {
+    "id": 1821306,
+    "name": "Phnom Penh",
+    "country": "KH",
+    "coord": {
+      "lon": 104.916008,
+      "lat": 11.56245
+    }
+  },
+  {
+    "id": 1822214,
+    "name": "Siemreab",
+    "country": "KH",
+    "coord": {
+      "lon": 103.849998,
+      "lat": 13.36667
+    }
+  }
+]
