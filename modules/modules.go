@@ -4,23 +4,27 @@ import (
 	"log"
 	"os"
 
-	client "github.com/influxdata/influxdb/client/v2"
+	"github.com/influxdata/influxdb/client/v2"
 )
 
-const (
-	MyDB     = "mydb"
-	username = "leo"
-	password = "leo123"
+// var WeatherAPIKey string
+var (
+	dbName        string
+	username      string
+	password      string
+	WeatherAPIKey string
 )
 
-var WeatherAPIKey string
-
+// Init func
 func Init() {
 	WeatherAPIKey = os.Getenv("WEATHERKEY")
+	dbName = os.Getenv("DBNAME")
+	username = os.Getenv("USERNAME")
+	password = os.Getenv("PASSWORD")
 }
 
-// NewClient func
-func NewClient() (client.Client, client.BatchPoints) {
+// NewConnection func
+func NewConnection() (client.Client, client.BatchPoints) {
 	// Create new HTTPClient
 	c, err := client.NewHTTPClient(client.HTTPConfig{
 		Addr:     "http://localhost:8086",
@@ -32,7 +36,7 @@ func NewClient() (client.Client, client.BatchPoints) {
 	}
 
 	bp, err := client.NewBatchPoints(client.BatchPointsConfig{
-		Database:  MyDB,
+		Database:  dbName,
 		Precision: "us",
 	})
 	if err != nil {

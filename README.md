@@ -1,6 +1,6 @@
 # influxdb
 
-get data from open weather api then insert into influxdb 
+get data from open weather api then insert into influxdb
 
 ## Usage
 
