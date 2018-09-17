@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"time"
 
-	client "github.com/influxdata/influxdb/client/v2"
+	"github.com/influxdata/influxdb/client/v2"
 )
 
 type Forecast struct {

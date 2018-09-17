@@ -102,3 +102,10 @@ func New() []Provider {
 	}
 	return providers
 }
+
+// Save func
+func Save(providers []Provider) {
+	for _, p := range providers {
+		p.Save()
+	}
+}
