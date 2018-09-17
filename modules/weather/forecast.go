@@ -39,14 +39,14 @@ type ForecastListSys struct {
 
 const apiForecast = "https://api.openweathermap.org/data/2.5/forecast"
 
-// Create func
-func (forecast Forecast) Create() {
+// Save func
+func (forecast Forecast) Save() {
 	fmt.Println("inserting forecast weather...")
 	startTime := time.Now()
 	noWorkers := 10
 
 	var models = make(chan model, 100)
-	go forecast.retrieveFromWeather(models)
+	go forecast.fetchData(models)
 	workerPool(noWorkers, models)
 
 	endTime := time.Now()
@@ -54,7 +54,7 @@ func (forecast Forecast) Create() {
 	fmt.Println("total time taken ", diff.Seconds(), "seconds")
 }
 
-func (forecast Forecast) retrieveFromWeather(models chan model) {
+func (forecast Forecast) fetchData(models chan model) {
 	for _, val := range weatherCities {
 		// var current Current
 		url := apiForecast + "?id=" + strconv.Itoa(val.ID) + "&units=metric&appid=" + modules.WeatherAPIKey

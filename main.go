@@ -18,7 +18,7 @@ func doEvery(d time.Duration, providers []weather.Provider) {
 	for x := range time.Tick(d) {
 		fmt.Printf("this time is %v\n", x)
 		for _, p := range providers {
-			p.Create()
+			p.Save()
 		}
 	}
 }

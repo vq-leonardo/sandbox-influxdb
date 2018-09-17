@@ -42,7 +42,22 @@ type CurrentSys struct {
 	Sunset  int     `json:"sunset"`
 }
 
-func (current Current) retrieveFromWeather(models chan model) {
+// Save func
+func (current Current) Save() {
+	fmt.Println("inserting current weather...")
+	startTime := time.Now()
+	noWorkers := 10
+
+	var models = make(chan model, 100)
+	go current.fetchData(models)
+	workerPool(noWorkers, models)
+
+	endTime := time.Now()
+	diff := endTime.Sub(startTime)
+	fmt.Println("total time taken ", diff.Seconds(), "seconds")
+}
+
+func (current Current) fetchData(models chan model) {
 	for _, val := range weatherCities {
 		// var current Current
 		url := apiCurrent + "?id=" + strconv.Itoa(val.ID) + "&units=metric&appid=" + modules.WeatherAPIKey
@@ -69,21 +84,6 @@ func (current Current) retrieveFromWeather(models chan model) {
 		models <- m
 	}
 	close(models)
-}
-
-// Create func
-func (current Current) Create() {
-	fmt.Println("inserting current weather...")
-	startTime := time.Now()
-	noWorkers := 10
-
-	var models = make(chan model, 100)
-	go current.retrieveFromWeather(models)
-	workerPool(noWorkers, models)
-
-	endTime := time.Now()
-	diff := endTime.Sub(startTime)
-	fmt.Println("total time taken ", diff.Seconds(), "seconds")
 }
 
 func (current Current) insert() {

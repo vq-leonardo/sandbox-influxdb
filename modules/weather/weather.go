@@ -8,7 +8,7 @@ import (
 
 // Provider interface
 type Provider interface {
-	Create()
+	Save()
 }
 
 type model interface {
