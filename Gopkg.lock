@@ -17,9 +17,15 @@
   revision = "23d116af351c84513e1946b527c88823e476be13"
   version = "v1.3.0"
 
+[[projects]]
+  name = "github.com/robfig/cron"
+  packages = ["."]
+  revision = "b41be1df696709bb6395fe435af20370037c0b4c"
+  version = "v1.1"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "417ac112d7477ab84cc23887a9c5738fb678a710967772285bb870260b6c72c6"
+  inputs-digest = "2d04977dcc9791218f202a52f27a8e429a9dc86bc220064bd5f5ffba0e8a1d76"
   solver-name = "gps-cdcl"
   solver-version = 1

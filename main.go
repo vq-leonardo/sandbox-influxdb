@@ -2,11 +2,11 @@ package main
 
 import (
 	"log"
-
 	"sandbox-influxdb/modules"
 	"sandbox-influxdb/modules/weather"
 
 	"github.com/joho/godotenv"
+	"github.com/robfig/cron"
 )
 
 func main() {
@@ -17,5 +17,8 @@ func main() {
 	modules.Init()
 
 	wea := weather.New()
-	weather.Save(wea)
+
+	c := cron.New()
+	c.AddFunc("0 */3 * * * ", func() { weather.Save(wea) }) // Run every 3 hour
+	c.Run()
 }
